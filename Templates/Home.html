@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+    {%block head %}
+        <head>
+            <link rel="stylesheet" href=Project/static/homepage.css"/>
+        {% block title %}
+            <title>Home</title>
+        {% endblock %}
+        </head>
+    {% endblock %}
+    {% block content %}
+        <div class="grid-container">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nVeNlaUCa2E?autoplay=1&mute=1&loop=1&controls=0"></iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cS-NPzaDX80?autoplay=1&mute=1&loop=1&controls=0">
+                </iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pbFma8Bd-AI?autoplay=1&mute=1&loop=1&controls=0">
+                </iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uqHjMd4Oci4?autoplay=1&mute=1&loop=1&controls=0">
+                </iframe>
+            </div>
+        </div>
+    {% endblock %}
