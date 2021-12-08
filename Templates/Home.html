@@ -1,35 +1,52 @@
 {% extends "template.html" %}
 
-<head>
-    <link rel="stylesheet" href="/static/homepage.css">
-    <title>{% block title %}Home{% endblock %}</title>
-</head>
+
+
+    {% block title %}Home{% endblock %}
+
 
 {% block content %}
-    <div class="grid-container-top" style="min-width=100% min-height=100%">
-        <div>
-            <iframe style="min-width=600px" height="400px" src="https://www.youtube.com/embed/nVeNlaUCa2E?autoplay=1&mute=1&loop=1&controls=0"> </iframe>
+
+    <div class="row row-cols-2">
+        <div class="col-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nVeNlaUCa2E?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
         </div>
-        <div>
-            <iframe style="min-width=600px" height="400px" src="https://www.youtube.com/embed/cS-NPzaDX80?autoplay=1&mute=1&loop=1&controls=0">
+        <div class="col-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cS-NPzaDX80?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
     </div>
-    <div class="grid-container-middle">
-        <div class="justify-content-center">
+    <div class="row row-cols-3">
+        <div class="col-4 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0lq1JIWQSlc?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="col-4">
             <a class="view-collection" href="/collection">
-                <img src="/nowPlaying.jpg" alt="Now Playing Sign" width="600px" height="400px" class="justify-content-center">
+                <img src={{imageFile}} alt="Now Playing Sign" width="560" height="315">
             </a>
         </div>
-    </div>
-    <div class="grid-container-bottom">
-        <div>
-            <iframe width="600px" height="400px" src="https://www.youtube.com/embed/pbFma8Bd-AI?autoplay=1&mute=1&loop=1&controls=0">
-            </iframe>
-        </div>
-        <div>
-            <iframe width="600px" height=400px" src="https://www.youtube.com/embed/uqHjMd4Oci4?autoplay=1&mute=1&loop=1&controls=0">
+        <div class="col-4 position-relative">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N-Esh4W3dfI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
     </div>
+    <div class="row row-col-2">
+        <div class="col-6 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pbFma8Bd-AI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="col-6">
+            <iframe width="560" height=315" src="https://www.youtube.com/embed/uqHjMd4Oci4?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
 {% endblock %}

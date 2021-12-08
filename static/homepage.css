@@ -1,25 +1,12 @@
-.grid-container-top{
-    display: flex;
-    grid-template-columns: 600px auto;
-    grid-template-rows: auto auto;
-    background-color: black;
-    padding-left: 400px;
-  }
+body {
+background-image: url("/static/century20Fox.jpg")
+}
 
-  .grid-container-middle{
-    display: flex;
-    grid-template-columns: auto;
-    grid-template-rows: auto
-    background-color: black;
-    padding-left: 400px;
-
-  }
-
-  .grid-container-bottom{
-    display: flex;
-    grid-template-columns: 800px auto;
-    grid-template-rows: auto auto;
-    background-color: black;
-    padding-left: 400px;
-  }
+.grid-container {
+  display: grid;
+  grid: auto / auto auto;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
 
