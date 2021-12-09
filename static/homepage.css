@@ -9,4 +9,16 @@ background-image: url("/static/century20Fox.jpg")
   background-color: transparent;
   padding: 10px;
 }
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+  border-color: blue;
+  color: white;
+}
+input:not(:placeholder-shown) {
+   background-color: grey !important;
+}
+input:placeholder-shown {
+   background-color: transparent !important;
+}
 

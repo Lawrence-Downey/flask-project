@@ -1,50 +1,47 @@
 {% extends "template.html" %}
 
-
-
-    {% block title %}Home{% endblock %}
-
-
+{% block title %}Home{% endblock %}
 {% block content %}
 
-    <div class="row row-cols-2">
-        <div class="col-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nVeNlaUCa2E?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <div class="row row-cols-2 float-center">
+        <div class="col-6 text-end">
+            <iframe width={{width}} height={{height}} src="{{video1}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
-        <div class="col-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cS-NPzaDX80?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <div class="col-6 text-start">
+             <iframe width={{width}} height={{height}} src="{{video2}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
     </div>
     <div class="row row-cols-3">
         <div class="col-4 ">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0lq1JIWQSlc?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+             <iframe width={{width}} height={{height}} src="{{video3}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
-        <div class="col-4">
+        <div class="col-4" id="centerImage">
+            <p class="text-danger fs-4 text-center"><strong>Click below to see what's available!</strong></p>
             <a class="view-collection" href="/collection">
                 <img src={{imageFile}} alt="Now Playing Sign" width="560" height="315">
             </a>
         </div>
         <div class="col-4 position-relative">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N-Esh4W3dfI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe width={{width}} height={{height}} src="{{video4}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
     </div>
     <div class="row row-col-2">
-        <div class="col-6 ">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pbFma8Bd-AI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <div class="col-6 text-end">
+             <iframe width={{width}} height={{height}} src="{{video5}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
-        <div class="col-6">
-            <iframe width="560" height=315" src="https://www.youtube.com/embed/uqHjMd4Oci4?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <div class="col-6 text-start">
+             <iframe width={{width}} height={{height}} src="{{video6}}" title={{title}} frameborder={{frameborder}}
+                    allow={{allow}} allowfullscreen>
             </iframe>
         </div>
     </div>
