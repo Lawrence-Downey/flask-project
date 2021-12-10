@@ -3,4 +3,28 @@
 {% block title %}Remove Movie{% endblock %}
 
 {% block content %}
+<div class="text-center">
+    <h1 class="text-center"><strong class="fs-1  text-danger bg-dark">Enter the Title of the Movie you'd like to remove</strong></h1>
+     <form method="POST" action="" enctype="multipart/form-data" class="remove-form">
+         <div class="form-group">
+            <label for="movieTitle"><strong class="text-danger bg-dark">Movie Title:</strong></label>
+            <input type="text" class="form-control" id="movieTitle" name="movieTitle" placeholder="Eg. The Hobbit"
+                    style="width:280%">
+         </div>
+     </form>
+</div>
+{% for i in range(5) %}
+<br />
+{% endfor %}
+<div class="text-center">
+    <img style="margin-top: 150px" src="{{removeImage}}" width={{width}} height={{height}}>
+</div>
+
+
+
+
+
+
+
+
 {% endblock %}
