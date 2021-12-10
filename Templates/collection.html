@@ -1,27 +1,26 @@
 {% extends "template.html" %}
 {% block title %}Collection{% endblock %}
-
-
 {% block content %}
-  <div class="grid-container" id="collection">
-    {% for movie in listOfMovies %}
-      <div>
-        <a class="text-center" href="#">
-          <img src="/static/{{movie[5]}}" width={{width}} height={{height}}>
-        </a>
-        <div class="hide" style="display: none">
-          <p class="text-white">Movie Title: {{movie[0]}}</p>
-          <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
-          <p class="text-white">Runtime: {{movie[1]}}</p>
-          <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
-          <p class="text-white">Starring: {{movie[2]}}</p>
-          <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
-          <p class="text-white">Genre: {{movie[3]}}</p>
-          <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
-          <p class="text-white">Box Office: {{movie[4]}}</p>
-          <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
-        </div>
-      </div>
-    {% endfor %}
+<div><p class="text-white fs-3 text-center shadow">Click the movie posters below for more details</p><br></div>
+  <div class="grid-container text-center" id="collection">
+      {% for movie in listOfMovies %}
+          <div>
+              <a class="text-center" href="#">
+                  <img src="/static/{{movie[5]}}" width={{width}} height={{height}}>
+              </a>
+              <div class="hide" style="display: none">
+                  <p class="text-white">Movie Title: {{movie[0]}}</p>
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+                  <p class="text-white">Runtime: {{movie[1]}}</p>
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+                  <p class="text-white">Starring: {{movie[2]}}</p>
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+                  <p class="text-white">Genre: {{movie[3]}}</p>
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+                  <p class="text-white">Box Office: {{movie[4]}}</p>
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+              </div>
+          </div>
+      {% endfor %}
   </div>
 {% endblock %}
