@@ -13,12 +13,47 @@ background-image: url("/static/century20Fox.jpg")
 .form-control:focus,
 .form-control:focus:active {
   border-color: blue;
-  color: white;
+  color: blue;
+
 }
 input:not(:placeholder-shown) {
-   background-color: grey !important;
+   background-color: gold !important;
 }
 input:placeholder-shown {
-   background-color: transparent !important;
+   background-color: gold !important;
+}
+
+.addMovie-centered{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:50%;
+    top:35%;
+    margin-left:-50px;
+    margin-top:-50px;
+}
+
+.form-control{
+    background-color: white;
+}
+
+.login-centered{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
+}
+
+.remove-form{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:46%;
+    top:35%;
+    margin-left:-50px;
+    margin-top:-50px;
 }
 
