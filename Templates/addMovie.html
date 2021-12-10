@@ -4,4 +4,45 @@
 
 {% block content %}
 
+    <div class="addMovie-centered">
+        <h1 class="text-secondary text-danger"><strong class="bg-dark">Add Movie</strong></h1>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <p><input type="file" name="filename"></p>
+             <div class="form-group">
+                <label for="movieTitle" class="text-danger bg-dark"><strong>Movie Title:</strong></label>
+                <input type="text" class="form-control" id="movieTitle" name="movieTitle" placeholder="Eg. The Hobbit"
+                        style="width:250%">
+             </div>
+             <br />
+             <div class="form-group">
+                <label for="runtime" class="text-danger bg-dark"><strong>Runtime:</strong></label>
+                <input type="text" class="form-control" id="runtime" name="runtime" placeholder="Eg. 1h33m"
+                        style="width:250%">
+             </div>
+             <br />
+             <div class="form-group">
+                <label for="starring" class="text-danger bg-dark"><strong>Starring:</strong></label>
+                <input type="text" class="form-control" id="starring" name="genre" placeholder="Eg. Tom Cruise"
+                        style="width:250%">
+             </div>
+             <br />
+             <div class="form-group">
+                <label for="genre" class="text-danger bg-dark"><strong>Genre:</strong></label>
+                <input type="text" class="form-control" id="genre" name="genre" placeholder="Eg. Action"
+                        style="width:250%">
+             </div>
+             <br />
+             <div class="form-group">
+                <label for="boxOffice" class="text-danger bg-dark"><strong>Box Office:</strong></label>
+                <input type="text" class="form-control" id="boxOffice" name="boxOffice" placeholder="Eg. $225,652,385"
+                        style="width:250%">
+             </div>
+             <br />
+             <button type="submit" class="btn btn-success">Add Movie</button>
+        </form>
+    </div>
+
+
+
+
 {% endblock %}
