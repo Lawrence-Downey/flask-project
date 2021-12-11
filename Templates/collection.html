@@ -9,6 +9,10 @@
                   <img src="/static/{{movie[5]}}" width={{width}} height={{height}}>
               </a>
               <div class="hide" style="display: none">
+                  {% for i in range(2): %}
+                        <br />
+                  {% endfor %}
+                  <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
                   <p class="text-white">Movie Title: {{movie[0]}}</p>
                   <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
                   <p class="text-white">Runtime: {{movie[1]}}</p>
@@ -19,6 +23,7 @@
                   <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
                   <p class="text-white">Box Office: {{movie[4]}}</p>
                   <p class="text-success"><strong>~~~~~~~~~~~~~~~~~~~~~~~~~</strong></p>
+                  <br />
               </div>
           </div>
       {% endfor %}

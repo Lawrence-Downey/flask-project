@@ -7,7 +7,7 @@
     <div class="addMovie-centered">
         <h1 class="text-secondary text-danger"><strong class="bg-dark">Add Movie</strong></h1>
         <form method="POST" action="" enctype="multipart/form-data">
-            <p><input type="file" name="filename"></p>
+            <p><input type="file" name="file" id="file" accept=".png, .jfif, .jpg, .jpeg"></p>
              <div class="form-group">
                 <label for="movieTitle" class="text-danger bg-dark"><strong>Movie Title:</strong></label>
                 <input type="text" class="form-control" id="movieTitle" name="movieTitle" placeholder="Eg. The Hobbit"
@@ -22,7 +22,7 @@
              <br />
              <div class="form-group">
                 <label for="starring" class="text-danger bg-dark"><strong>Starring:</strong></label>
-                <input type="text" class="form-control" id="starring" name="genre" placeholder="Eg. Tom Cruise"
+                <input type="text" class="form-control" id="starring" name="starring" placeholder="Eg. Tom Cruise"
                         style="width:250%">
              </div>
              <br />
@@ -38,7 +38,7 @@
                         style="width:250%">
              </div>
              <br />
-             <button type="submit" class="btn btn-success">Add Movie</button>
+            <button type="submit" class="btn btn-success" style="margin-left: 85px">Add Movie</button>
         </form>
     </div>
 

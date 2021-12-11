@@ -10,6 +10,10 @@ $(document).ready( () => {
     });
 
     setTimeout(function(){
-    $("#centerImage").fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500)
+    $("#centerImage").fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500)
+                     .fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500)
     }, 2000);
+
+    $("errorMessage").fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500)
+                     .fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500)
 });

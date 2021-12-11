@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block title %} ERROR {% endblock %}
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+<h2 style="margin-top:450px; margin-left: 650px;">
+    <strong class="text-danger fs-1 bg-dark errorMessage">
+        {{ message }}
+    </strong>
+</h2>
+{% endfor %}
+
+{% endblock %}
